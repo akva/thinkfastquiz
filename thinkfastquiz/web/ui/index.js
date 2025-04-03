@@ -31,11 +31,7 @@ class ThinkFastQuizApp extends Component {
         let { game } = this.state;
         if (game) {
             let answer = this.answerRef.current.value;
-            console.log(answer)
-            console.log(this.ws)
             call(this.ws, 'attempt', { position: game.position, answer })
-            // apiPost('/api/attempt', { position: game.position, answer })
-            //     .then(data => this.setState({game: data.game, message: data.message}))
         }
     }
 
