@@ -1,0 +1,9 @@
+.zed
+.ropeproject
+
+v
+*.egg-info
+__pycache__
+
+*.db
+sandbox.py

@@ -1,0 +1,5 @@
+python3 -m venv v
+. v/bin/activate
+pip install -e .
+python initdb.py
+fastapi run thinkfastquiz/main.py
